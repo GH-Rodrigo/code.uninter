@@ -1,0 +1,33 @@
+.quadrado{
+    border: 4px solid rgb(199, 0, 166);
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: aqua;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quadrado1{
+    left: 0px;
+    top: 0px;
+    background-color: blue;
+}
+
+.quadrado2{
+    right: 0px;
+    top: 0px;
+    background-color: rgb(228, 71, 71);
+}
+
+.quadrado3{
+    left: 0px;
+    bottom: 0px;
+    background-image: url(cachorro1.JPG);
+}
+
+.quadrado4{
+    right: 0px;
+    bottom: 0px;
+    background-color: blueviolet;
+}
