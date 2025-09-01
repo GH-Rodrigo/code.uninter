@@ -1,69 +1,68 @@
-/* Estilos Gerais do corpo do site */
+/*  Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f2f2f2;
-    color: #333333;
+    background-color: #f8f9fa; /* Cor de fundo cinza claro */
+    color: #343a40; /* Texto cinza escuro */
     line-height: 1.6;
 }
 
-/* Esconde as seções que não devem aparecer no início */
-#formacao { display: none; }
-#portfolio { display: none; }
-#contato { display: none; }
-
-/* Estilos do Cabeçalho Principal */
-.main-header {
-    background-color: #FF8C00;
-    color: #FFFFFF;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Esconde as seções que não aparecem no início */
+#formacao, #portfolio, #contato { 
+    display: none; 
 }
 
-.main-header h1 {
+/* Cabeçalho */
+.cabecalho {
+    background-color: #FF8C00;
+    color: #FFFFFF; 
+    padding: 30px 0;
+    text-align: center;
+}
+
+.cabecalho h1 {
     margin: 0;
     font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
 }
 
-.blue {
-    color: #3B5998;
+/* Palavra em cinza no título */
+.cinza {
+    color: #495057;
 }
 
-/* Estilo para a Navegação (menu) */
+/* Menu de Navegação */
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove bolinhas */
     padding: 0;
-    margin: 15px 0 0 0;
-    display: flex;
+    margin: 20px 0 0 0;
+    display: flex; /* Itens lado a lado */
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Quebra linha */
+    gap: 10px; /* Espaço entre botões */
 }
 
 nav li a {
     display: block;
     padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); 
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 5px;
-    border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
+/* Efeito quando passar o mouse */
 nav li a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Estilos das Seções de Conteúdo */
+/* Conteudo */
 section {
     padding: 40px;
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px; /* Limita largura para não ficar esticado */
+    background-color: #FFFFFF; /* Fundo branco */
 }
 
 section h2 {
@@ -71,4 +70,39 @@ section h2 {
     border-bottom: 2px solid #FFDAB9;
     padding-bottom: 10px;
     margin-bottom: 20px;
+}
+
+/* Formulário */
+#contato .form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Input e textarea */
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Remove a borda preta quando clica */
+#contato input:focus,
+#contato textarea:focus {
+    outline: none;
+}
+
+/* Botão enviar */
+#contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
 }
