@@ -8,8 +8,8 @@
 </head>
 <body>
 
-    <header class="main-header">
-        <h1>Sobre<span class="blue">Rodrigo</span></h1>
+    <header class="cabecalho">
+        <h1>Sobre<span class="cinza">Rodrigo</span></h1>
         <nav>
             <ul>
                 <li><a href="#" onclick="mostrarAba('sobre-mim')">Sobre Mim</a></li>
@@ -37,7 +37,9 @@
 
     <section id="portfolio">
         <h2>Portfólio</h2>
-        <p>Aqui estão alguns dos meus projetos e práticas:</p>
+        <p>Falando um pouco sobre os códigos que já desenvolvi, todos eles sendo durante as aulas das disciplinas da minha faculdade de Engenharia de Software. Fiz apenas o básico, brincando e fazendo mudanças nos códigos. Meus projetos iniciais focaram em fundamentos web, onde desenvolvi um simulador de pedidos de açaí, pratiquei o uso de CSS para design, margens e cores na tela e criei botões interativos com JavaScript que alteram cor e texto ao serem clicados.</p>
+        
+        <h3>Alguns de meus projetos:</h3>
         <ul>
             <li><a href="pratica-1.html" target="_blank">Prática 1 - HTML básico</a></li>
             <li><a href="na-pratica-css-1.html" target="_blank">Prática CSS 1</a></li>
@@ -46,16 +48,28 @@
             <li><a href="na-pratica-js-3.html" target="_blank">Prática JS 3</a></li>
             <li><a href="teste-java.html" target="_blank">Teste Java</a></li>
         </ul>
+
+        <p>Em projetos mais complexos, tive a experiência na criação de sistemas de console em Python. Dentre eles, criei uma calculadora de juros, um simulador de pedidos para um restaurante com um cardápio próprio, e um sistema para uma distribuidora de roupas que calcula frete e juros direto no console. Também desenvolvi um software de gerenciamento de funcionários que oferece funcionalidades, como cadastro, consulta, remoção e a opção de retornar ao menu ou encerrar o programa.</p>
+    
+        <p>O projeto mais complexo foi o de banco de dados, no qual tive que montar a estrutura de um banco do zero e escrever SELECTs para consultar dados. Esta experiência aprofundou minha compreensão sobre a gestão de dados e sua importância no dia a dia das empresas.</p>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
-        <ul>
-            <li><strong>E-mail:</strong> seu-email@exemplo.com</li>
-            <li><strong>Telefone:</strong> (99) 99999-9999</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">linkedin.com/in/seu-perfil</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/seu-usuario" target="_blank">github.com/seu-usuario</a></li>
-        </ul>
+        <p>Preencha para falar comigo:</p>
+
+        <form action="#" method="post">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <script>
