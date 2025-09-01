@@ -1,0 +1,20 @@
+    h1{
+        font-size: 50px;
+        color: blue;
+        margin: 1px;
+        margin-left: 60px;
+    }
+
+    .lista{
+        margin-left: 20px;
+        list-style: upper-roman;
+        font-size: 40px;
+        color: blueviolet;
+        width: bisque;
+    }
+    .lista li:nth-last-child(odd){
+        background-color: rgb(26, 167, 185);
+    }
+    .lista li:nth-last-child(even){
+        background-color: aquamarine;
+    }
